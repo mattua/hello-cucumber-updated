@@ -1,6 +1,13 @@
 Feature: Belly
 
-  Scenario: a few cukes
-    Given I have 42 cukes in my belly
+  @status=dont_run_from_test_runner
+  Scenario: a few cakes
+    Given I have 42 cakes in my belly
     When I wait 1 hour
     Then my belly should growl
+
+  @status=run_from_test_runner
+  Scenario: dummy
+    Given I drink 4 beers
+    When I drive my car
+    Then I lose my license
