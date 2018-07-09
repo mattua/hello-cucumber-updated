@@ -45,4 +45,22 @@ public class Stepdefs {
     }
 
 
+    @Given("a web browser is on the Google page")
+    public void a_web_browser_is_on_the_Google_page() {
+        // Write code here that turns the phrase above into concrete actions
+
+    }
+
+    @When("the search phrase {string} is entered")
+    public void the_search_phrase_is_entered(String string) {
+        // Write code here that turns the phrase above into concrete actions
+
+    }
+
+    @Then("results for {string} are shown")
+    public void results_for_are_shown(String string) {
+        // Write code here that turns the phrase above into concrete actions
+
+    }
+
 }
