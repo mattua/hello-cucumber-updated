@@ -38,6 +38,9 @@ public class Stepdefs {
 
     }
 
+
+    // Note the ^ marks the start and $ marks the end of the phrase
+
     @Then("^I lose my license$")
     public void i_lose_my_license() {
         // Write code here that turns the phrase above into concrete actions
@@ -51,16 +54,16 @@ public class Stepdefs {
 
     }
 
-    @When("the search phrase {string} is entered")
-    public void the_search_phrase_is_entered(String string) {
+    @When("^the search phrase (.+) is entered$")
+    public void the_search_phrase_is_entered(String aninmal) {
         // Write code here that turns the phrase above into concrete actions
-
+        System.out.println(aninmal);
     }
 
-    @Then("results for {string} are shown")
-    public void results_for_are_shown(String string) {
+    @Then("^results for (.+) are shown with the (.+)$")
+    public void results_for_are_shown_with_the(String animal,String extinct) {
         // Write code here that turns the phrase above into concrete actions
-
+        System.out.println(animal + " is extent: " + extinct);
     }
 
 }
