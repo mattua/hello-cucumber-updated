@@ -4,6 +4,7 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.cucumber.datatable.DataTable;
 
 public class Stepdefs {
     @Given("^I have (\\d+) cakes in my belly$")
@@ -65,5 +66,32 @@ public class Stepdefs {
         // Write code here that turns the phrase above into concrete actions
         System.out.println(animal + " is extent: " + extinct);
     }
+
+    @Given("the values below are passed")
+    public void the_values_below_are_passed(DataTable dataTable) {
+        // Write code here that turns the phrase above into concrete actions
+        // For automatic transformation, change DataTable to one of
+        // List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+        // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+        // Double, Byte Short, Long, BigInteger or BigDecimal.
+        //
+        // For other transformations you can register a DataTableType.
+
+        System.out.println(dataTable.asList());
+
+    }
+
+    @When("I choose the city")
+    public void i_choose_the_city() {
+        // Write code here that turns the phrase above into concrete actions
+
+    }
+
+    @Then("I say Hello")
+    public void i_say_Hello() {
+        // Write code here that turns the phrase above into concrete actions
+
+    }
+
 
 }

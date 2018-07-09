@@ -26,3 +26,13 @@ Feature: Belly
       | panda    | yes      |
       | elephant | no       |
       | rhino    | yes      |
+
+  @status=run_from_test_runner
+  Scenario:
+    This passes a table of values to the underlying clause
+    Given the values below are passed
+    |London|
+    |Milan |
+    |Zurich|
+    When I choose the city
+    Then I say Hello
