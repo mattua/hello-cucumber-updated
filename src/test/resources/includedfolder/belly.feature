@@ -1,13 +1,13 @@
 Feature: Belly
 
 
-  Scenario: a few cakes
+  Scenario: Eating too many cakes
     Given I have 42 cakes in my belly
     When I wait 1 hour
     Then my belly should growl
 
 
-  Scenario: dummy
+  Scenario: Drinking beer
     Given I drink 4 beers
     When I drive my car
     Then I lose my license
