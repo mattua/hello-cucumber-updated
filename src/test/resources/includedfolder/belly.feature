@@ -36,3 +36,15 @@ Feature: Belly
     |Zurich|
     When I choose the city
     Then I say Hello
+
+
+      Scenario Outline: doubler
+      Test mutplier function
+      Given I have my doubler function
+      When an <inputnumber> is entered
+      Then the <outputnumber> is shown
+
+      Examples: Numbers
+      |inputnumber|outputnumber|
+      |3          |6            |
+      |4          |8            |
